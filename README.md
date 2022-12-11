@@ -1,4 +1,4 @@
-# ppc_rascunho
+# Pthread_exercicios
 <p>Resolução de exercícios de programação paralela </p>
 
 ## Exercicio 2:
