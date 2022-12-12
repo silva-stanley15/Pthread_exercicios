@@ -10,7 +10,7 @@ int k = 2,
 
 int* vet;
 
-void *helloWorld (void *a){
+void *crivo (void *a){
     int *elemento = (int *) a;
     cout << "Sou thread: " << elemento << endl;
     
@@ -45,7 +45,7 @@ int main(){
 
     while(k*k <= n){
         cout << "Thread principal: criando thread " << k << endl;
-        pthread_create(&threads[k], NULL, helloWorld, &k);
+        pthread_create(&threads[k], NULL, crivo, &k);
         pthread_join(threads[k], NULL);
     }
 
